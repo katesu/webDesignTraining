@@ -188,10 +188,16 @@ footer .item li:nth-last-child(2) {
   margin-bottom: 20px;
 }
 
-footer .item img:not(:last-child) {
+footer .item .address .link {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .item .social .link:not(:last-child) {
   margin-right: 24px;
 }
 
-footer .item:last-child {
+footer .item .social .link:last-child {
   margin-bottom: 0;
 }
