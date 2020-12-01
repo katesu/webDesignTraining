@@ -1,0 +1,6 @@
+.container
+  width: 1200px
+
+@for $i from 1 through 12
+  .col-#{$i}
+    width: (100% / $gridColumnTotal) * $i

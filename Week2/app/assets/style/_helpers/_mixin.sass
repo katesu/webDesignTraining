@@ -1,0 +1,73 @@
+@mixin range_in($max-width: 0, $min-width: 0)
+  @if ($min-width == 0)
+    @media screen and (max-width: $max-width)
+      @content
+    @else
+      @media screen and (min-width: $min-width) and (max-width: $max-width)
+        @content
+
+@mixin desktopDown
+  @media screen and (max-width: 1000px)
+    @content
+
+@mixin ipadDown
+  @media screen and (max-width: 768px)
+    @content
+
+@mixin iphoneDown
+  @media screen and (max-width: 568px)
+    @content
+
+@mixin text_hidden
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0
+
+@mixin absCenter
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin absXcenter($top: null, $bottom: null)
+  position: absolute
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin relXcenter($top: null, $bottom: null)
+  position: relative
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin fixedXcenter($top: null, $bottom: null)
+  position: fixed
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin triangle ($size, $color, $align)
+  height: 0
+  width: 0
+  @if $align == top
+    border-bottom: ($size) solid $color
+    border-left: ($size + 1) solid transparent
+    border-right: ($size + 1) solid transparent
+  @else if $align == right
+    border-left: ($size) solid $color
+    border-top: ($size + 1) solid transparent
+    border-bottom: ($size + 1) solid transparent
+  @else if $align == bottom
+    border-top: ($size) solid $color
+    border-left: ($size + 1) solid transparent
+    border-right: ($size + 1) solid transparent
+  @else if $align == left
+    border-right: ($size) solid $color
+    border-top: ($size + 1) solid transparent
+    border-bottom: ($size + 1) solid transparent

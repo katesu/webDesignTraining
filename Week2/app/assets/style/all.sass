@@ -1,0 +1,62 @@
+@import ./_helpers/_variables
+@import ./_components/_base
+@import ./_components/_util
+@import ./_components/_grid
+@import ./_components/_layout
+
+.about
+  font-size: 24px
+  font-weight: bold
+  .container
+    width: 412px
+  .profile
+    line-height: 36px
+    padding-top: 24px
+  .exp-title
+    padding-top: 32px
+    &::before
+      content: ''
+      display: inline-block
+      width: 22px
+      height: 22px
+      margin-right: 16px
+      background-color: $accentColor
+      border-radius: 50%
+      transform: translateY(4px)
+
+.brand
+  background: $secondaryColor
+  color: $mainColor
+  h3
+    font-size: 24px
+  .section-head p
+    font-size: 20px
+    margin-bottom: 68px
+  .brand-img
+    margin-left: -12px
+    margin-right: -12px
+    flex-direction: row-reverse
+    flex-wrap: wrap
+    justify-content: center
+    li
+      padding-left: 12px
+      padding-right: 12px
+      margin-bottom: 40px
+    img
+      width: 100%
+
+.work
+  ul.work-pic
+    flex-wrap: wrap
+    padding-left: -12px
+    padding-right: -12px
+    li
+      padding-left: 12px
+      padding-right: 12px
+      margin-bottom: 56px
+    p
+      font-size: 20px
+      font-style: normal
+      padding-top: 16px
+      span
+        font-style: italic

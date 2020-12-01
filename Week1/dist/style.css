@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 200;
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_thin.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_thin.ttf") format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_semibold.ttf") format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'SF Pro Text';
+  font-weight: 200;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 3.3rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.d-lb {
+  display: inline-block;
+}
+
+.m0-auto {
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+.title::after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid black;
+  margin: 8px 0 16px 0;
+}
+
+.title span {
+  color: #A00404;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.item {
+  margin-bottom: 72px;
+  font-size: 2.4rem;
+}
+
+.list-left-line {
+  padding-left: 24px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  margin: 0 auto;
+}
+
+.dark-style {
+  color: #fff;
+  background-color: #415165;
+}
+
+.dark-style .title {
+  text-align: center;
+}
+
+.dark-style .title::after {
+  border-color: #fff;
+}
+
+.dark-style .title span {
+  color: #fff;
+}
+
+header h1.item {
+  font-size: 8rem;
+  line-height: 9.5rem;
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+
+header h1.item::after {
+  margin-top: 24px;
+  border-bottom: 2px solid black;
+}
+
+header img {
+  padding: 48px 0;
+}
+
+.body .prof li {
+  line-height: 3.6rem;
+  margin-bottom: 24px;
+}
+
+.body .edu li {
+  margin-bottom: 24px;
+}
+
+.body .skills {
+  padding-bottom: 52px;
+}
+
+.body .skills .title {
+  padding: 32px 102px 0 102px;
+  margin-bottom: 40px;
+}
+
+.body .skills ul.list-left-line {
+  width: 225px;
+  border-left-color: #fff;
+}
+
+.body .skills ul.list-left-line li {
+  line-height: 2.9rem;
+}
+
+.body .skills ul.list-left-line li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.body .exp ul.list-left-line {
+  width: 1160px;
+  border-left-color: #96A9C4;
+}
+
+.body .exp ul.list-left-line li {
+  width: 642px;
+  margin-bottom: 32px;
+}
+
+.body .exp ul.list-left-line li p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.body .exp .job-title {
+  font-weight: 500;
+}
+
+.body .exp .logo {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+footer .title::after {
+  margin-bottom: 32px;
+}
+
+footer .item li {
+  margin-bottom: 16px;
+}
+
+footer .item li:nth-last-child(2) {
+  margin-bottom: 20px;
+}
+
+footer .item img:not(:last-child) {
+  margin-right: 24px;
+}
+
+footer .item:last-child {
+  margin-bottom: 0;
+}

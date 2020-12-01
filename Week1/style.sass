@@ -1,0 +1,136 @@
+@font-face
+	font-family: 'SF Pro Text'
+	font-style: normal
+	font-weight: 200
+	src: url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_thin.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_thin.ttf") format("truetype")
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+@font-face
+	font-family: 'SF Pro Text'
+	font-style: normal
+	font-weight: 600
+	src: url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_semibold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_semibold.ttf") format("truetype")
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+
+// elements
+*,*::before,*::after
+	box-sizing: border-box
+html
+	font-size: 62.5%
+body
+	font-family: 'SF Pro Text'
+	font-weight: 200
+	font-size: 12px
+	font-size: 1.2rem
+	line-height: 3.3rem
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+// tools
+.d-lb
+	display: inline-block
+.m0-auto
+	margin: 0 auto
+
+// custom class
+.container
+	width: 1200px
+	margin: 0 auto
+.title
+	font-size: 3.2rem
+	font-weight: 400
+	line-height: 4.5rem
+	&::after
+		display: block
+		content: ''
+		border-bottom: 1px solid black
+		margin: 8px 0 16px 0
+	span
+		color: #A00404
+		font-size: 2.4rem
+		font-weight: 600
+		text-transform: uppercase
+		padding-left: 16px
+.item
+	margin-bottom: 72px
+	font-size: 2.4rem
+.list-left-line
+	padding-left: 24px
+	border-left-width: 1px
+	border-left-style: solid
+	margin: 0 auto
+.dark-style
+	color: #fff
+	background-color: #415165
+	.title
+		text-align: center
+		&::after
+			border-color: #fff
+		span
+			color: #fff
+
+// style
+header
+	h1.item
+		font-size: 8rem
+		line-height: 9.5rem
+		padding-top: 40px
+		margin-bottom: 0
+		&::after
+			margin-top: 24px
+			border-bottom: 2px solid black
+	img
+		padding: 48px 0
+
+.body
+	.prof li
+		line-height: 3.6rem
+		margin-bottom: 24px
+
+	.edu li
+		margin-bottom: 24px
+
+	.skills
+		padding-bottom: 52px
+		.title
+			padding: 32px 102px 0 102px
+			margin-bottom: 40px
+		ul.list-left-line
+			width: 225px
+			border-left-color: #fff
+			li
+				line-height: 2.9rem
+			li:not(:last-child)
+				margin-bottom: 20px
+
+	.exp
+		ul.list-left-line
+			width: 1160px
+			border-left-color: #96A9C4
+			li
+				width: 642px
+				margin-bottom: 32px
+				p
+					font-size: 2rem
+					line-height: 3rem
+		.job-title
+			font-weight: 500
+		.logo
+			margin: 8px 0
+
+footer
+	text-align: center
+	padding-top: 24px
+	padding-bottom: 32px
+	.title::after
+		margin-bottom: 32px
+	.item
+		li
+			margin-bottom: 16px
+		li:nth-last-child(2)
+			margin-bottom: 20px
+		img:not(:last-child)
+			margin-right: 24px
+		&:last-child
+			margin-bottom: 0
