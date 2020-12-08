@@ -1,0 +1,55 @@
+@mixin makeMediaTextUtils($type:null, $map:null)
+  @if $type == "align"
+    @each $value in $map
+      .text-#{$value}
+        text-align: #{$value}
+  @else if $type == "weight"
+    @each $value in $map
+      .text-#{$value}
+        font-weight: #{$value}
+  @else if $type == "style"
+    @each $value in $map
+      .text-#{$value}
+        font-style: #{$value}
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      @if $type == "align"
+        @each $value in $map
+          .text-#{$name}-#{$value}
+            text-align: #{$value}
+      @else if $type == "weight"
+        @each $value in $map
+          .text-#{$name}-#{$value}
+            font-weight: #{$value}
+      @else if $type == "style"
+        @each $value in $map
+          .text-#{$name}-#{$value}
+            font-style: #{$value}
+
+@mixin makeMediaTextSize
+  .lh-normal
+    line-height: normal !important
+  @for $i from 0 through 10
+    .fz-#{$i}
+      font-size: $i * 0.8rem !important
+  @for $i from 1 through 12
+    .lh-#{$i}
+      line-height: $i * 0.8rem
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      @for $i from 0 through 10
+        .fz-#{$name}-#{$i}
+          font-size: $i * 0.8rem !important
+      @for $i from 1 through 12
+        .lh-#{$name}-#{$i}
+          line-height: $i * 0.8rem
+
+@mixin makeMediaThemeColorsUtils
+  @each $colorName, $color in $themeColors
+    .text-#{$colorName}
+      color: $color !important
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      @each $colorName, $color in $themeColors
+        .text-#{$name}-#{$colorName}
+          color: $color  !important

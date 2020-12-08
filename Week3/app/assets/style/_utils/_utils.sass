@@ -1,0 +1,22 @@
+.hr
+  width: 100%
+  border-bottom: 1px solid $white
+
+.z-index-top
+  z-index: 999
+
+.bordered
+  border: 1px solid
+  &-gray-100
+    @extend  .bordered
+    border-color: $gray-100
+
+@each $name, $color in $themeColors
+  .bg-#{$name}
+    background-color: $color
+
+@for $i from 0 through 10
+   .opacity-#{$i}
+     opacity: $i * 1 / 10
+
+@include makeMediaAbsCenter

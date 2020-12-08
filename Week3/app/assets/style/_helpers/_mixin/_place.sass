@@ -1,0 +1,60 @@
+@mixin absCenter($top: 50%, $left: 50%, $bottom: null, $right: null)
+  @if $top == 0 and $left == 0 and $bottom == 0 and $right == 0
+    position: absolute
+    top: $top
+    left: $left
+    bottom: $bottom
+    right: $right
+  @else
+    position: absolute
+    top: $top
+    left: $left
+    bottom: $bottom
+    right: $right
+    transform: translate(-50%, -50%)
+    width: fit-content
+
+@mixin absXcenter($top: null, $bottom: null)
+  position: absolute
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+  width: fit-content
+
+@mixin absYcenter($left: null, $right: null)
+  position: absolute
+  top: 50%
+  left: $left
+  right: $right
+  transform: translateY(-50%)
+  width: fit-content
+
+@mixin relXcenter($top: null, $bottom: null)
+  position: relative
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin fixedXcenter($top: null, $bottom: null)
+  position: fixed
+  top: $top
+  bottom: $bottom
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin makeMediaAbsCenter
+  .absolute-center
+    @include absCenter
+    width: fit-content
+  .absolute-fill-center
+    @include absCenter($top: 0, $left: 0, $bottom: 0, $right: 0)
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      .absolute-#{$name}-center
+        @include absCenter
+        width: fit-content
+      .absolute-#{$name}-fill-center
+        @include absCenter($top: 0, $left: 0, $bottom: 0, $right: 0)
+

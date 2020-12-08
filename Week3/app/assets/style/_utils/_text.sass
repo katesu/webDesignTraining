@@ -1,0 +1,15 @@
+@include makeMediaTextUtils($type: "align", $map: (right, center, left))
+@include makeMediaTextUtils($type: "weight", $map: (bold))
+@include makeMediaTextUtils($type: "style", $map: (italic))
+@include makeMediaTextSize
+@include makeMediaThemeColorsUtils
+
+.text-hide
+  @include textHidden
+.text-capital
+  text-transform: uppercase
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+html(lang="tw")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./assets/style/all.css")
+    title 第三週 - RWD 網站
+  body.p-relative
+    header.bg-main.z-index-top
+      .row.jc-space-between.jc-sm-center.ai-center.no-gutters-sm.pt-4.pb-4.mr-11.ml-11.mr-lg-5.ml-lg-5.mx-sm-0.py-sm-0
+        h1.col-sm-12.text-hide.text-sm-center glasses
+          a.link.header__logo.d-inline-block(href="index.html")
+            img(src="./assets/images/logo.png")
+        ul.header__menu.col-sm-12.d-sm-flex.fxw-sm-wrap
+          li.col-sm-6.text-sm-center.ml-sm-0
+            a.link.d-inline-block.px-2.py-2(href="#") 系列鏡框
+          li.col-sm-6.text-sm-center.ml-4.ml-md-1.ml-sm-0
+            a.link.d-inline-block.px-2.py-2(href="#") 門市據點
+          li.col-sm-6.text-sm-center.ml-4.ml-md-1.ml-sm-0
+            a.link.d-inline-block.px-2.py-2(href="#") 部落格
+          li.col-sm-6.text-sm-center.ml-4.ml-md-1.ml-sm-0
+            a.link.d-inline-block.pl-2.py-2.pr-sm-2(href="#") 常見問題
+
+    block content
+
+    footer.bg-main.px-5.pt-5.pb-4.px-4.px-sm-0
+      .container.mx-xs-0
+        .row
+          .col-9
+            ul.footer__menu.mb-2.d-sm-none
+              li.mr-2.mr-lg-0
+                a.link.pr-2.py-2(href="index.html") 首頁
+              li.mr-2.mr-lg-0
+                a.link.px-2.py-2(href="#") 系列鏡框
+              li.mr-2.mr-lg-0
+                a.link.px-2.py-2(href="#") 門市據點
+              li.mr-2.mr-lg-0
+                a.link.px-2.py-2(href="#") 部落格
+              li.mr-2.mr-lg-0
+                a.link.pl-2.py-2(href="#") 常見問題
+            ul.footer__contact
+              li.d-block.pt-2.pt-sm-0.mb-sm-1
+                a.link.phone.lh-6.fz-md-3.fz-sm-2(href="tel:0800-000-000")
+                  img.icon.mr-2(src="./assets/images/icon-phone.svg")
+                  | 0800-000-000
+              li.d-block.pb-3
+                a.link.lh-6.fz-md-3.fz-sm-2(href="mailto:glasses@business.com")
+                  img.icon.mr-2(src="./assets/images/icon-mail.svg")
+                  | glasses@business.com
+          ul.footer__social.col-3.d-flex.jc-flex-end
+            li
+              a.link.px-2.px-xs-0(href="#")
+                img(src="./assets/images/icon-fb.svg")
+            li.ml-xs-3
+              a.link.px-2.px-xs-0(href="#")
+                img(src="./assets/images/icon-ig.svg")
+            li.ml-xs-3.pl-2.pl-xs-0
+              a.link(href="#")
+                img(src="./assets/images/icon-line.svg")
+          .col-12
+            .hr
+        .row.pt-3.pt-xs-2.jc-space-between.p-relative
+          a.footer__logo--mobile.d-none.d-xs-block.p-absolute
+            img(src="./assets/images/logo.png")
+          .col.col-sm-12
+            a.footer__logo.link.d-lg-none.mr-5(href="index.html")
+              img(src="./assets/images/logo.png")
+            span.copyright.lh-6.lh-normal Copyright © 2020 Glasses.All rights reserved.
+          ul.footer__article.col.col-sm-12
+            li.d-sm-block.lh-6.lh-normal.mt-sm-1
+              a.link.px-2.px-md-1.pl-sm-0(href="#") 隱私權政策
+            li.d-sm-block.lh-6.lh-normal.mt-sm-1.ml-4.ml-md-1.ml-sm-0
+              a.link.pl-2.pl-md-1.pl-sm-0(href="#") 服務條款

@@ -1,0 +1,61 @@
+header, footer
+  color: $white
+  .link
+    color: $white
+
+header
+  @include smDown
+    position: fixed
+    top: 0
+    width: 100%
+.header__logo
+  @include smDown
+    width: 48px
+    padding-top: 10px
+    padding-bottom: 10px
+.header__menu
+  li
+    @include smDown
+      border: 1px solid $white
+  .link
+    font-size: 20px
+
+.footer__menu li
+  @include lgDown
+    margin-right: 1px
+.footer__contact
+  .link
+    font-size: 36px
+    @include lgDown
+      font-size: 20px
+    @include smDown
+      line-height: 21px
+  .phone .icon
+    width: 44px
+    height: auto
+  .link .icon
+    @include lgDown
+      width: 36px
+    @include smDown
+      width: 20px
+
+.footer__social
+  img
+    @include lgDown
+      max-width: none
+      width: 36px
+    @include smDown
+      width: 28px
+    @include xsDown
+      font-size: 20px
+.footer__logo--mobile
+  right: 0
+  bottom: 0
+  height: auto
+  padding-right: 15px
+  img
+    width: 46px
+.footer__article
+  .link
+    @include mdDown
+      font-size: 14px

@@ -1,0 +1,142 @@
+extends ./assets/_components/_layout.pug
+
+block content
+  .banner.p-relative
+    .col
+      .banner__new-series.fz-sm-2.text-accent.text-right.text-bold Promise-Desert 2020 早春系列
+      .banner__slogan.mr-1.fz-8.fz-lg-6.fz-sm-4.text-accent.text-center.text-bold 看得清，才能看得遠
+  //- feature
+  .bg-secondary.pt-8.pb-10.pt-lg-5.pt-sm-4.pb-sm-6
+    .container
+      .row.mb-8.mb-lg-4.mb-sm-2
+        .col-12
+          h2.fz-md-4.fz-sm-3.text-accent.text-center.text-bold 用專業的心，做專業的事
+      .row
+        .col-3.col-lg-6.col-sm-12.order-lg-1.pr-5.pl-5.pr-lg-6.pl-lg-6.pr-sm-9.pl-sm-9.mb-sm-5
+          .feature__icon.mb-5.mb-sm-4
+            img.d-block.m-0-auto(src="./assets/images/icon-dollar.svg")
+          h3.feature__title.mb-sm-1.h4.text-accent.text-center.text-bold 單一價格
+          p 無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。
+        .col-3.col-lg-6.col-sm-12.order-lg-3.pr-5.pl-5.pr-lg-6.pl-lg-6.mb-lg-5.pr-sm-9.pl-sm-9
+          .feature__icon.mb-5.mb-sm-4
+            img.d-block.m-0-auto(src="./assets/images/icon-clock.svg")
+          h3.feature__title.mb-sm-1.h4.text-accent.text-center.text-bold 20. 分鐘即可取件
+          p 為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘 即可完成。
+        .col-3.col-lg-6.col-sm-12.order-lg-2.pr-5.pl-5.pr-lg-6.pl-lg-6.mb-lg-5.pr-sm-9.pl-sm-9
+          .feature__icon.mb-5.mb-sm-4
+            img.d-block.m-0-auto(src="./assets/images/icon-heart.svg")
+          h3.feature__title.mb-sm-1.h4.text-accent.text-center.text-bold 安心售後服務
+          p 我們提供長達 1/-=20 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+        .col-3.col-lg-6.col-sm-12.pr-5.pl-5.pr-lg-6.pl-lg-6.pr-sm-9.pl-sm-9
+          .feature__icon.d-flex.ai-center.mb-5.mb-sm-4
+            img.d-block.m-0-auto(src="./assets/images/icon-glasses.svg")
+          h3.feature__title.mb-sm-1.h4.text-accent.text-center.text-bold 關於鏡片
+          p 使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+  .product-classic.pt-8.pb-10.pt-lg-5.pb-lg-5.pt-sm-4.pb-sm-4
+    .container
+      .row.mb-8.mb-lg-4.mb-sm-2
+        .col-12
+          h2.fz-md-4.fz-sm-3.text-accent.text-center.text-bold 經典系列鏡框
+      ul.row
+        li.col-12.mb-4.mb-md-1
+          .row
+            .col-7.col-sm-12
+              img(src="./assets/images/product-1.png")
+            .col-5.col-sm-12.absolute-sm-center.d-flex.ai-center
+              a.link.d-flex.ai-center.ml-1.ml-md-0.text-main.text-sm-white.h2.fz-lg-4.text-capital.text-italic.text-bold(href="#")
+                img.icon.d-sm-none(src="./assets/images/icon-diamond.svg")
+                img.icon.d-none.d-sm-inline-block(src="./assets/images/icon-diamond-white.svg")
+                span optical
+
+        li.col-12.mb-4.mb-md-1
+          .row.fxd-md-row-reverse
+            .col-5.col-sm-12.absolute-sm-center.d-flex.jc-flex-end.ai-center.jc-sm-center.z-index-top
+              a.link.d-flex.ai-center.ml-1.ml-md-0.text-main.text-sm-white.h2.fz-lg-4.text-capital.text-italic.text-bold(href="#")
+                img.icon.d-sm-none(src="./assets/images/icon-sun.svg")
+                img.icon.d-none.d-sm-inline-block(src="./assets/images/icon-sun-white.svg")
+                span sunglasses
+            .col-7.col-sm-12
+              img(src="./assets/images/product-2.png")
+
+        li.col-12.mb-4
+          .row
+            .col-7.col-sm-12
+              img(src="./assets/images/product-3.png")
+            .col-5.col-sm-12.absolute-sm-center.d-flex.ai-center
+              a.link.d-flex.ai-center.ml-1.ml-md-0.text-main.text-sm-white.h2.fz-lg-4.text-capital.text-italic.text-bold(href="#")
+                img.icon.d-sm-none(src="./assets/images/icon-thunder.svg")
+                img.icon.d-none.d-sm-inline-block(src="./assets/images/icon-thunder-white.svg")
+                span functional
+  .product-co-branding.pt-8.pb-10.pt-lg-5.pb-lg-5.pt-sm-4.pb-sm-4
+    .container
+      .row.mb-8.mb-lg-4.mb-sm-2
+        .col-12
+          h2.fz-md-4.fz-sm-3.text-white.text-center.text-bold 聯名設計鏡框
+      ul.row
+        li.col-6.col-sm-12.mb-sm-2
+          .p-relative
+            img(src="./assets/images/product-8.png")
+            .cover.absolute-fill-center.bg-white.opacity-5
+          .absolute-center.h1.fz-md-6.fz-sm-5.fz-xs-4.text-main.text-bold Double A+
+        li.col-6.col-sm-12
+          .p-relative
+            img(src="./assets/images/product-9.png")
+            .cover.absolute-fill-center.bg-white.opacity-5
+          .absolute-center.h1.fz-md-6.fz-sm-5.fz-xs-4.text-main.text-bold YOUTH
+  //- recommend
+  .pt-8.pb-10.pt-lg-5.pb-lg-5.pt-sm-4.pb-sm-4
+    .container
+      .row.mb-8.mb-lg-4.mb-sm-2
+        .col-12
+          h2.fz-md-4.fz-sm-3.text-main.text-center.text-bold 顧客推薦
+      ul.row
+        li.col-3.col-md-6.col-xs-12.mb-md-3
+          img.recommend__photo(src="./assets/images/rec-1.png")
+          .col-12.pt-2.pb-2.bordered-gray-100
+            p.mb-2.text-gray-900 Jessy
+            p.mb-2.lh-3.text-gray-900 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            p.text-gray-500 Last updated 3 mins ago
+        li.col-3.col-md-6.col-xs-12.mb-md-3
+          img.recommend__photo(src="./assets/images/rec-2.png")
+          .col-12.pt-2.pb-2.bordered-gray-100
+            p.mb-2.text-gray-900 Karen
+            p.mb-2.lh-3.text-gray-900 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            p.text-gray-500 Last updated 3 mins ago
+        li.col-3.col-md-6.col-xs-12.mb-xs-3
+          img.recommend__photo(src="./assets/images/rec-3.png")
+          .col-12.pt-2.pb-2.bordered-gray-100
+            p.mb-2.text-gray-900 Chelsea
+            p.mb-2.lh-3.text-gray-900 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            p.text-gray-500 Last updated 3 mins ago
+        li.col-3.col-md-6.col-xs-12.mb-xs-3
+          img.recommend__photo(src="./assets/images/rec-4.png")
+          .col-12.pt-2.pb-2.bordered-gray-100
+            p.mb-2.text-gray-900 Jane
+            p.mb-2.lh-3.text-gray-900 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            p.text-gray-500 Last updated 3 mins ago
+  .contact.bg-secondary.pt-8.pb-10.pt-lg-5.pb-lg-5.pt-sm-4.pb-sm-4
+    .container.px-sm-0
+      .row.mb-3.mb-lg-4.mb-sm-2
+        .col-12
+          h2.fz-md-4.fz-sm-3.text-center.text-bold 聯絡我們
+      .row
+        .col-8.m-0-auto
+          p.fz-md-2.mb-3.lh-4.lh-md-3 我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          form.form(action="")
+            label.mb-4(for="name")
+              | 姓名
+              input.pr-1.pl-1(type="text", name="name", placeholder="陳小明")
+            label.mb-4(for="phone")
+              | 聯絡電話
+              input.pr-1.pl-1(type="tel", name="phone", placeholder="0912-345-678")
+            label.mb-4(for="email")
+              | 電子郵件
+              input.pr-1.pl-1(type="email", name="email", placeholder="example@email.com")
+            label.form__comment.mb-4(for="comment")
+              | 意見反應
+              textarea.p-1(type="text", name="comment", placeholder="請輸入您的意見" wrap="soft")
+            label(for="private")
+              input.d-inline-block(type="checkbox", name="private")
+              | 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+            .d-flex.jc-center
+              .btn-main.mt-5.mb-md-3.md-sm-4 確認送出

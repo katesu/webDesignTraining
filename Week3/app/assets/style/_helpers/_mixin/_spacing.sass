@@ -1,0 +1,73 @@
+@mixin makeMediaSpacing()
+  .m-0-auto
+    margin: 0 auto
+  @for $i from 0 through 15
+    .p-#{$i}
+      padding: $i * 0.8rem !important
+    .py-#{$i}
+      padding-top: $i * 0.8rem !important
+      padding-bottom: $i * 0.8rem !important
+    .px-#{$i}
+      padding-right: $i * 0.8rem !important
+      padding-left: $i * 0.8rem !important
+    .pt-#{$i}
+      padding-top: $i * 0.8rem !important
+    .pb-#{$i}
+      padding-bottom: $i * 0.8rem !important
+    .pl-#{$i}
+      padding-left: $i * 0.8rem !important
+    .pr-#{$i}
+      padding-right: $i * 0.8rem !important
+    .m-#{$i}
+      margin: $i * 0.8rem !important
+    .my-#{$i}
+      margin-top: $i * 0.8rem !important
+      margin-bottom: $i * 0.8rem !important
+    .mx-#{$i}
+      margin-right: $i * 0.8rem !important
+      margin-left: $i * 0.8rem !important
+    .mt-#{$i}
+      margin-top: $i * 0.8rem !important
+    .mb-#{$i}
+      margin-bottom: $i * 0.8rem !important
+    .ml-#{$i}
+      margin-left: $i * 0.8rem !important
+    .mr-#{$i}
+      margin-right: $i * 0.8rem !important
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      .m-#{$name}-0-auto
+        margin: 0 auto
+      @for $i from 0 through 15
+        .p-#{$name}-#{$i}
+          padding: $i * 0.8rem !important
+        .py-#{$name}-#{$i}
+          padding-top: $i * 0.8rem !important
+          padding-bottom: $i * 0.8rem !important
+        .px-#{$name}-#{$i}
+          padding-right: $i * 0.8rem !important
+          padding-left: $i * 0.8rem !important
+        .pt-#{$name}-#{$i}
+          padding-top: $i * 0.8rem !important
+        .pb-#{$name}-#{$i}
+          padding-bottom: $i * 0.8rem !important
+        .pl-#{$name}-#{$i}
+          padding-left: $i * 0.8rem !important
+        .pr-#{$name}-#{$i}
+          padding-right: $i * 0.8rem !important
+        .m-#{$name}-#{$i}
+          margin: $i * 0.8rem !important
+        .my-#{$name}-#{$i}
+          margin-top: $i * 0.8rem !important
+          margin-bottom: $i * 0.8rem !important
+        .mx-#{$name}-#{$i}
+          margin-right: $i * 0.8rem !important
+          margin-left: $i * 0.8rem !important
+        .mt-#{$name}-#{$i}
+          margin-top: $i * 0.8rem !important
+        .mb-#{$name}-#{$i}
+          margin-bottom: $i * 0.8rem !important
+        .ml-#{$name}-#{$i}
+          margin-left: $i * 0.8rem !important
+        .mr-#{$name}-#{$i}
+          margin-right: $i * 0.8rem !important

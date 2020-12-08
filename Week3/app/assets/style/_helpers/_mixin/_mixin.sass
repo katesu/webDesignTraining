@@ -1,0 +1,30 @@
+@mixin textHidden
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0
+
+@mixin wh($value)
+  width: $value
+  height: $value
+
+@mixin triangle ($size, $color, $align)
+  height: 0
+  width: 0
+  @if $align == top
+    border-bottom: ($size) solid $color
+    border-left: ($size + 1) solid transparent
+    border-right: ($size + 1) solid transparent
+  @else if $align == right
+    border-left: ($size) solid $color
+    border-top: ($size + 1) solid transparent
+    border-bottom: ($size + 1) solid transparent
+  @else if $align == bottom
+    border-top: ($size) solid $color
+    border-left: ($size + 1) solid transparent
+    border-right: ($size + 1) solid transparent
+  @else if $align == left
+    border-right: ($size) solid $color
+    border-top: ($size + 1) solid transparent
+    border-bottom: ($size + 1) solid transparent

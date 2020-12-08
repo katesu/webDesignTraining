@@ -1,0 +1,39 @@
+.container
+	width: 100%
+	max-width: 1140px
+	padding-right: $gridGutter / 2
+	padding-left: $gridGutter / 2
+	margin-right: auto
+	margin-left: auto
+
+@include makeContainerMaxWidths($containerMaxWidths)
+
+.container-fluid
+	max-width: none
+
+
+.row
+	display: flex
+	flex-wrap: wrap
+	margin-right: -$gridGutter / 2
+	margin-left: -$gridGutter / 2
+
+.no-gutters, [class*="no-gutters"]
+	margin-right: 0
+	margin-left: 0
+	.col, [class*="col-"]
+		padding-right: 0
+		padding-left: 0
+
+.col, [class*="col-"]
+	position: relative
+	padding-right: $gridGutter / 2
+	padding-left: $gridGutter / 2
+
+@include makeMediaGrid()
+@include makeMediaUtils($type: display, $map: (none, flex, block, inline-block))
+@include makeMediaUtils($type: position, $map: (relative, absolute))
+@include makeMediaUtils($type: fxw, $map: (wrap, no-wrap))
+@include makeMediaUtils($type: fxd, $map: (column, row, row-reverse, column-reverse))
+@include makeMediaUtils($type: jc, $map: (flex-start, center, flex-end, space-between, space-around))
+@include makeMediaUtils($type: ai, $map: (flex-start, center, flex-end, space-between, space-around))

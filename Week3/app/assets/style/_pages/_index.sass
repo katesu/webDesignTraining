@@ -1,0 +1,63 @@
+.banner
+  background: url(../images/banner.png) no-repeat center / contain
+  padding-top: 43.75%
+  @include mdDown
+    background: url(../images/banner-sm.png) no-repeat center / contain
+    padding-top: 109%
+  @include smDown
+    margin-top: 158px
+  .col
+    @include absYcenter($right: 20%)
+    @include mdDown
+      right: 10%
+    @include xsDown
+      right: unset
+      left: 50%
+      transform: translate(-50%, -50%)
+.banner__new-series
+  font-size: 36px
+  line-height: 50px
+  @include lgDown
+    font-size: 20px
+    line-height: 28px
+  @include smDown
+    line-height: 22px
+.banner__slogan
+  line-height: 90px
+  @include lgDown
+    line-height: 67px
+  @include smDown
+    line-height: 45px
+
+.feature__icon
+  height: 100px
+  img
+    width: 100px
+  @include mdDown
+    height: 80px
+    img
+      width: 80px
+.feature__title
+  margin-bottom: 4px
+  @include smDown
+    font-size: 20px
+  + p
+    line-height: 1.5
+
+.product-classic
+  .icon
+    @include smDown
+      width: 32px
+      + span
+        font-size: 28px
+.product-co-branding
+  background: url("../images/bg.png") no-repeat center / cover
+
+.recommend__photo
+  width: 100%
+
+.contact
+  p
+    font-size: 20px
+  form label
+    line-height: 22px

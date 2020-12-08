@@ -1,0 +1,76 @@
+@mixin makeContainerMaxWidths($maxWidths)
+  @each $breakpoint, $maxWidth in $maxWidths
+    @include breakpointsDown($breakpoint, $gridBreakpoints)
+      .container
+        max-width: $maxWidth
+
+@mixin makeMediaGrid()
+  @for $i from 1 through 12
+    .col-#{$i}
+      width: (100% / $gridColumns) * $i
+  @for $i from 1 through 10
+    .order-#{$i}
+      order: - $i !important
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      @for $i from 1 through 12
+        .col-#{$name}-#{$i}
+          width: (100% / $gridColumns) * $i
+      @for $i from 1 through 10
+        .order-#{$name}-#{$i}
+          order: - $i !important
+      .no-gutters-#{$name}
+          margin-right: 0
+          margin-left: 0
+
+@mixin makeMediaUtils($type:null, $map:null)
+  @if $type == "display"
+    @each $value in $map
+      .d-#{$value}
+        display: #{$value} !important
+  @else if $type == "position"
+    @each $value in $map
+      .p-#{$value}
+        position: #{$value} !important
+  @else if $type == "jc"
+    @each $value in $map
+      .jc-#{$value}
+        justify-content: #{$value} !important
+  @else if $type == "ai"
+    @each $value in $map
+      .ai-#{$value}
+        align-items: #{$value} !important
+  @else if $type == "fxw"
+    @each $value in $map
+      .fxw-#{$value}
+        flex-wrap: #{$value} !important
+  @else if $type == "fxd"
+    @each $value in $map
+      .fxd-#{$value}
+        flex-direction: #{$value} !important
+  @each $name, $breakpoint in $gridBreakpoints
+    @media screen and (max-width: $breakpoint)
+      @if $type == "display"
+        @each $value in $map
+          .d-#{$name}-#{$value}
+            display: #{$value} !important
+      @else if $type == "position"
+        @each $value in $map
+          .p-#{$name}-#{$value}
+            position: #{$value} !important
+      @else if $type == "jc"
+        @each $value in $map
+          .jc-#{$name}-#{$value}
+            justify-content: #{$value} !important
+      @else if $type == "ai"
+        @each $value in $map
+          .ai-#{$name}-#{$value}
+            align-items: #{$value} !important
+      @else if $type == "fxw"
+        @each $value in $map
+          .fxw-#{$name}-#{$value}
+            flex-wrap: #{$value} !important
+      @else if $type == "fxd"
+        @each $value in $map
+          .fxd-#{$name}-#{$value}
+            flex-direction: #{$value} !important

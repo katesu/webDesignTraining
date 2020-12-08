@@ -1,0 +1,8 @@
+@function rem-calc($size)
+  $remSize: $size / 16
+  @return #{$remSize}rem
+
+@function breakpoint($breakpoint, $medieWidth)
+  @each $name, $width in $medieWidth
+    @if $name == $breakpoint
+      @return $width

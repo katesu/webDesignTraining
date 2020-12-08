@@ -1,0 +1,28 @@
+@mixin breakpointsDown($breakpoint, $medieWidth)
+  $width: breakpoint($breakpoint, $medieWidth)
+  @media screen and (max-width: $width)
+    @content
+
+@mixin rangeIn($max-width: 0, $min-width: 0)
+  @if ($min-width == 0)
+    @media screen and (max-width: $max-width)
+      @content
+  @else
+    @media screen and (min-width: $min-width) and (max-width: $max-width)
+      @content
+
+@mixin lgDown
+  @media screen and (max-width: map-get($gridBreakpoints, lg))
+    @content
+
+@mixin mdDown
+  @media screen and (max-width: map-get($gridBreakpoints, md))
+    @content
+
+@mixin smDown
+  @media screen and (max-width: map-get($gridBreakpoints, sm))
+    @content
+
+@mixin xsDown
+  @media screen and (max-width: map-get($gridBreakpoints, xs))
+    @content
