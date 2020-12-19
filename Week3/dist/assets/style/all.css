@@ -61,7 +61,8 @@ html {
 
 body {
   font-family: custom-font;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 img {
   max-width: 100%;
@@ -739,11 +740,21 @@ header, footer {
     top: 0;
     width: 100%; } }
 
-@media screen and (max-width: 575px) {
-  .header__logo {
-    width: 48px;
-    padding-top: 10px;
-    padding-bottom: 10px; } }
+.header__logo {
+  background: url(../images/logo.png) no-repeat center/contain;
+  width: 89px;
+  height: 49px;
+  font-size: 0;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+  @media screen and (max-width: 575px) {
+    .header__logo {
+      width: 48px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 @media screen and (max-width: 575px) {
   .header__menu li {
