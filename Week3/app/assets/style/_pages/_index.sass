@@ -1,33 +1,31 @@
 .banner
-  background: url(../images/banner.png) no-repeat center / contain
-  padding-top: 43.75%
+  width: 585px
   @include mdDown
-    background: url(../images/banner-sm.png) no-repeat center / contain
-    padding-top: 109%
-  @include smDown
-    margin-top: 158px
-  .col
-    @include absYcenter($right: 20%)
+    width: 432px
+  &-bg
+    background: url(../images/banner.png) no-repeat center / cover
+    height: 43.75vw
     @include mdDown
-      right: 10%
-    @include xsDown
-      right: unset
-      left: 50%
-      transform: translate(-50%, -50%)
-.banner__new-series
-  font-size: 36px
-  line-height: 50px
-  @include lgDown
-    font-size: 20px
-    line-height: 28px
-  @include smDown
-    line-height: 22px
-.banner__slogan
-  line-height: 90px
-  @include lgDown
-    line-height: 67px
-  @include smDown
-    line-height: 45px
+      background: url(../images/banner-sm.png) no-repeat center / cover
+      height: 109vw
+    @include smDown
+      margin-top: 158px
+  &__space
+    width: 20vw
+  &__new-series
+    font-size: 36px
+    line-height: 50px
+    @include lgDown
+      font-size: 20px
+      line-height: 28px
+    @include smDown
+      line-height: 22px
+  &__slogan
+    line-height: 90px
+    @include lgDown
+      line-height: 67px
+    @include smDown
+      line-height: 45px
 
 .feature__icon
   height: 100px
@@ -48,11 +46,13 @@
   .icon
     @include smDown
       width: 32px
-      + span
+      + h3
         font-size: 28px
 .product-co-branding
   background: url("../images/bg.png") no-repeat center / cover
 
+.recommend__custom-name
+  font-size: 14px
 .recommend__photo
   width: 100%
 

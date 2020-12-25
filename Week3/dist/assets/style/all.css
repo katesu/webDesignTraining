@@ -105,7 +105,8 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   padding: 16px 143px;
-  text-align: center; }
+  text-align: center;
+  border-color: transparent; }
   @media screen and (max-width: 768px) {
     .btn, .btn-main {
       padding: 8px 77px; } }
@@ -128,6 +129,9 @@ h6, .h6 {
 
 .form label input:not([type="checkbox"]), .form label textarea {
   margin-top: 4px; }
+
+.form textarea {
+  resize: none; }
 
 .form .form__comment textarea {
   height: 136px; }
@@ -4220,51 +4224,40 @@ header, footer {
   text-transform: uppercase; }
 
 .banner {
-  background: url(../images/banner.png) no-repeat center/contain;
-  padding-top: 43.75%; }
+  width: 585px; }
   @media screen and (max-width: 768px) {
     .banner {
-      background: url(../images/banner-sm.png) no-repeat center/contain;
-      padding-top: 109%; } }
-  @media screen and (max-width: 575px) {
-    .banner {
-      margin-top: 158px; } }
-  .banner .col {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content; }
+      width: 432px; } }
+  .banner-bg {
+    background: url(../images/banner.png) no-repeat center/cover;
+    height: 43.75vw; }
     @media screen and (max-width: 768px) {
-      .banner .col {
-        right: 10%; } }
-    @media screen and (max-width: 375px) {
-      .banner .col {
-        right: unset;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
-
-.banner__new-series {
-  font-size: 36px;
-  line-height: 50px; }
-  @media screen and (max-width: 992px) {
-    .banner__new-series {
-      font-size: 20px;
-      line-height: 28px; } }
-  @media screen and (max-width: 575px) {
-    .banner__new-series {
-      line-height: 22px; } }
-
-.banner__slogan {
-  line-height: 90px; }
-  @media screen and (max-width: 992px) {
-    .banner__slogan {
-      line-height: 67px; } }
-  @media screen and (max-width: 575px) {
-    .banner__slogan {
-      line-height: 45px; } }
+      .banner-bg {
+        background: url(../images/banner-sm.png) no-repeat center/cover;
+        height: 109vw; } }
+    @media screen and (max-width: 575px) {
+      .banner-bg {
+        margin-top: 158px; } }
+  .banner__space {
+    width: 20vw; }
+  .banner__new-series {
+    font-size: 36px;
+    line-height: 50px; }
+    @media screen and (max-width: 992px) {
+      .banner__new-series {
+        font-size: 20px;
+        line-height: 28px; } }
+    @media screen and (max-width: 575px) {
+      .banner__new-series {
+        line-height: 22px; } }
+  .banner__slogan {
+    line-height: 90px; }
+    @media screen and (max-width: 992px) {
+      .banner__slogan {
+        line-height: 67px; } }
+    @media screen and (max-width: 575px) {
+      .banner__slogan {
+        line-height: 45px; } }
 
 .feature__icon {
   height: 100px; }
@@ -4287,11 +4280,14 @@ header, footer {
 @media screen and (max-width: 575px) {
   .product-classic .icon {
     width: 32px; }
-    .product-classic .icon + span {
+    .product-classic .icon + h3 {
       font-size: 28px; } }
 
 .product-co-branding {
   background: url("../images/bg.png") no-repeat center/cover; }
+
+.recommend__custom-name {
+  font-size: 14px; }
 
 .recommend__photo {
   width: 100%; }
