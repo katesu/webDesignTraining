@@ -38,15 +38,15 @@ html(lang="tw")
               li.mr-2.mr-lg-0
                 a.link.pl-2.py-2(href="#") 常見問題
             ul.footer__contact
-              li.d-block.pt-2.pt-sm-0.mb-sm-1
+              li.d-block.pt-2.pt-sm-0.mb-sm-1(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0")
                 a.link.phone.lh-6.fz-md-3.fz-sm-2(href="tel:0800-000-000")
                   img.icon.mr-2(src="./assets/images/icon-phone.svg")
                   | 0800-000-000
-              li.d-block.pb-3
+              li.d-block.pb-3(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0")
                 a.link.lh-6.fz-md-3.fz-sm-2(href="mailto:glasses@business.com")
                   img.icon.mr-2(src="./assets/images/icon-mail.svg")
                   | glasses@business.com
-          ul.footer__social.col-3.d-flex.jc-flex-end
+          ul.footer__social.col-3.d-flex.jc-flex-end(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0")
             li
               a.link.px-2.px-xs-0(href="#")
                 img(src="./assets/images/icon-fb.svg")
@@ -70,3 +70,8 @@ html(lang="tw")
               a.link.px-2.px-md-1.pl-sm-0(href="#") 隱私權政策
             li.d-sm-block.lh-6.lh-normal.mt-sm-1.ml-4.ml-md-1.ml-sm-0
               a.link.pl-2.pl-md-1.pl-sm-0(href="#") 服務條款
+
+    link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
+    script(src="https://unpkg.com/aos@next/dist/aos.js")
+    script.
+      AOS.init();
