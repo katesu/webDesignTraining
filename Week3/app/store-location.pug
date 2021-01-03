@@ -1,0 +1,93 @@
+extends ./assets/_components/_layout.pug
+
+block content
+  - var pageHeaderTitle = "門市據點"
+  - var pageHeaderImgSrc="./assets/images/icon-location.svg"
+  include ./assets/_components/_pageHeader.pug
+
+  .store-location.container.pt-2.mb-md-9.mb-sm-7
+    .store-finder.d-flex.ai-center
+      span.lh-4.lh-md-3.text-bold 選擇地區
+      select#location.px-sm-2.py-sm-1(name="location")
+        option 台北市
+    .row.pt-4
+      ul.card.card--vertical.col-4.col-md-6.col-sm-12.mb-4
+        li.card__head.bordered-gray-50
+          img(src="./assets/images/locate1.jpg")
+          h3.card__title.pl-3.py-md-1.pl-md-2.fz-3.fz-md-2.lh-md-3 台北中山旗艦店
+        li.card__body.px-3.px-md-2.py-2.bordered-gray-50
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-phone-black.svg")
+            h4.pl-2 電話：(02)000-1234
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-clock-black.svg")
+            h4.pl-2 營業時間：10:00-21:00
+          .card__body-item.d-flex.ai-flex-start
+            img.icon(src="./assets/images/icon-map.svg")
+            h4.pl-2 地址：台北市中山區南京東路25巷2-1號
+        li.card__footer
+          button.btn-black.w100pc 詳細資訊
+      ul.card.card--vertical.col-4.col-md-6.col-sm-12.mb-4
+        li.card__head.bordered-gray-50
+          img(src="./assets/images/locate2.jpg")
+          h3.card__title.pl-3.py-md-1.pl-md-2.fz-3.fz-md-2.lh-md-3 台北中山旗艦店
+        li.card__body.px-3.px-md-2.py-2.bordered-gray-50
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-phone-black.svg")
+            h4.pl-2 電話：(02)000-1234
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-clock-black.svg")
+            h4.pl-2 營業時間：10:00-21:00
+          .card__body-item.d-flex.ai-flex-start
+            img.icon(src="./assets/images/icon-map.svg")
+            h4.pl-2 地址：台北市中山區南京東路25巷2-1號
+        li.card__footer
+          button.btn-black.w100pc 詳細資訊
+      ul.card.card--vertical.col-4.col-md-6.col-sm-12.mb-4
+        li.card__head.bordered-gray-50
+          img(src="./assets/images/locate3.jpg")
+          h3.card__title.pl-3.py-md-1.pl-md-2.fz-3.fz-md-2.lh-md-3 台北中山旗艦店
+        li.card__body.px-3.px-md-2.py-2.bordered-gray-50
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-phone-black.svg")
+            h4.pl-2 電話：(02)000-1234
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-clock-black.svg")
+            h4.pl-2 營業時間：10:00-21:00
+          .card__body-item.d-flex.ai-flex-start
+            img.icon(src="./assets/images/icon-map.svg")
+            h4.pl-2 地址：台北市中山區南京東路25巷2-1號
+        li.card__footer
+          button.btn-black.w100pc 詳細資訊
+      ul.card.card--vertical.col-4.col-md-6.col-sm-12.mb-4
+        li.card__head.bordered-gray-50
+          img(src="./assets/images/locate4.jpg")
+          h3.card__title.pl-3.py-md-1.pl-md-2.fz-3.fz-md-2.lh-md-3 台北中山旗艦店
+        li.card__body.px-3.px-md-2.py-2.bordered-gray-50
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-phone-black.svg")
+            h4.pl-2 電話：(02)000-1234
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-clock-black.svg")
+            h4.pl-2 營業時間：10:00-21:00
+          .card__body-item.d-flex.ai-flex-start
+            img.icon(src="./assets/images/icon-map.svg")
+            h4.pl-2 地址：台北市中山區南京東路25巷2-1號
+        li.card__footer
+          button.btn-black.w100pc 詳細資訊
+      ul.card.card--vertical.col-4.col-md-6.col-sm-12.mb-4
+        li.card__head.bordered-gray-50
+          img(src="./assets/images/locate5.png")
+          h3.card__title.pl-3.py-md-1.pl-md-2.fz-3.fz-md-2.lh-md-3 台北中山旗艦店
+        li.card__body.px-3.px-md-2.py-2.bordered-gray-50
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-phone-black.svg")
+            h4.pl-2 電話：(02)000-1234
+          .card__body-item.d-flex.ai-center.mb-1
+            img.icon(src="./assets/images/icon-clock-black.svg")
+            h4.pl-2 營業時間：10:00-21:00
+          .card__body-item.d-flex.ai-flex-start
+            img.icon(src="./assets/images/icon-map.svg")
+            h4.pl-2 地址：台北市中山區南京東路25巷2-1號
+        li.card__footer
+          button.btn-black.w100pc 詳細資訊
