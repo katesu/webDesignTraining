@@ -1,17 +1,17 @@
 .btn
   display: inline-block
   cursor: pointer
-  padding: 16px 143px
   text-align: center
   border-color: transparent
-  @include mdDown
-    padding: 8px 77px
-  @include smDown
-    padding-right: 54px
-    padding-left: 54px
   &-main
     @extend .btn
     color: $white
     background-color: $mainColor
+    &:hover
+      background: $accentColor
+  &-black
+    @extend .btn
+    color: $white
+    background-color: $black
     &:hover
       background: $accentColor
