@@ -7,9 +7,18 @@
 
 .bordered
   border: 1px solid
+  &-gray-50
+    @extend  .bordered
+    border-color: $gray-50
   &-gray-100
     @extend  .bordered
     border-color: $gray-100
+
+.h100pc
+  height: 100%
+
+.w100pc
+  width: 100%
 
 @each $name, $color in $themeColors
   .bg-#{$name}
